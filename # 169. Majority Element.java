@@ -30,6 +30,7 @@ class Solution {
         // for-each element
         for (int i: nums) {
             if (map.containsKey(i) &&
+                // add 1 means add the current occurence
                 map.get(i) + 1 > nums.length/2) {
                 return i;
             } else {
